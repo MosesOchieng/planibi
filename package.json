@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-icons": "node scripts/generate-icons.js"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^11.10.0",
+    "framer-motion": "^12.16.0",
+    "next-auth": "^4.24.7",
+    "next-pwa": "^5.6.0",
+    "next-themes": "^0.4.6",
+    "nodemailer": "^6.10.1",
+    "openai": "^5.1.1",
+    "puppeteer": "^24.10.0",
+    "react-redux": "^9.2.0",
+    "sharp": "^0.32.1",
+    "web-push": "^3.6.7",
+    "workbox-window": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.30",
+    "@types/react": "19.1.6",
+    "@types/web-push": "^3.6.3",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.8.3"
+  }
+}
