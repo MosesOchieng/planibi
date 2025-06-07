@@ -4,13 +4,12 @@
   <rect width="512" height="512" rx="128" fill="#4F46E5"/>
   
   <!-- Globe -->
-  <circle cx="256" cy="256" r="160" stroke="white" stroke-width="24" fill="none"/>
-  <path d="M256 96v320M96 256h320" stroke="white" stroke-width="24"/>
+  <circle cx="256" cy="256" r="160" stroke="white" stroke-width="16" fill="none"/>
+  <path d="M256 96v320M96 256h320" stroke="white" stroke-width="16"/>
   
   <!-- Airplane -->
-  <path d="M320 192L192 320" stroke="white" stroke-width="24" stroke-linecap="round"/>
-  <path d="M320 320L192 192" stroke="white" stroke-width="24" stroke-linecap="round"/>
+  <path d="M320 192L192 320M192 192L320 320" stroke="white" stroke-width="24" stroke-linecap="round"/>
   
-  <!-- AI Symbol -->
-  <text x="256" y="400" font-family="Arial" font-size="48" fill="white" text-anchor="middle">AI</text>
+  <!-- AI Text -->
+  <text x="256" y="400" font-family="Arial" font-size="64" fill="white" text-anchor="middle">AI</text>
 </svg> 

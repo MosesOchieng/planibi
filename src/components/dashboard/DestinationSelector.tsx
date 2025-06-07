@@ -789,7 +789,7 @@ export default function DestinationSelector({ context, onUpdate, onComplete, onA
                   </div>
                 </div>
               </motion.div>
-            )}
+              )}
           </div>
 
           {/* Interactive Elements */}
@@ -895,7 +895,7 @@ export default function DestinationSelector({ context, onUpdate, onComplete, onA
         </div>
       </div>
 
-      {/* Horizontal scrolling container for destination cards */}
+          {/* Horizontal scrolling container for destination cards */}
       <div 
         ref={containerRef}
         className="flex-1 overflow-y-auto"
@@ -942,44 +942,44 @@ export default function DestinationSelector({ context, onUpdate, onComplete, onA
           }}
         >
           {(searchResults?.destinations || mockDestinations).map((destination) => (
-            <motion.div
-              key={destination.name}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+                <motion.div
+                  key={destination.name}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
               onTouchStart={(e) => handleCardTouchStart(e, destination)}
               onClick={() => {
                 triggerHapticFeedback('light')
                 handleDestinationSelect(destination)
               }}
               className={`flex-shrink-0 w-80 snap-center bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-200 ${
-                selectedDestination?.name === destination.name ? 'ring-2 ring-indigo-500' : ''
-              }`}
+                    selectedDestination?.name === destination.name ? 'ring-2 ring-indigo-500' : ''
+                  }`}
               style={{
                 touchAction: 'pan-y pinch-zoom',
                 WebkitTapHighlightColor: 'transparent',
                 userSelect: 'none',
               }}
-            >
-              <div className="relative h-48">
-                <img
-                  src={destination.image}
-                  alt={destination.name}
-                  className="w-full h-full object-cover"
+                >
+                  <div className="relative h-48">
+                    <img
+                      src={destination.image}
+                      alt={destination.name}
+                      className="w-full h-full object-cover"
                   loading="lazy"
-                />
+                    />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">{destination.name}</h3>
-                  <p className="text-sm opacity-90">{destination.country}</p>
-                </div>
-              </div>
-              <div className="p-4">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                      <h3 className="text-xl font-bold">{destination.name}</h3>
+                      <p className="text-sm opacity-90">{destination.country}</p>
+                    </div>
+                  </div>
+                  <div className="p-4">
                 <p className="text-gray-600 dark:text-gray-300 text-sm mb-3 line-clamp-2">
-                  {destination.description}
-                </p>
+                      {destination.description}
+                    </p>
                 <div className="flex items-center justify-between text-sm">
                   <div className="flex items-center text-gray-500 dark:text-gray-400">
-                    <GlobeAltIcon className="h-4 w-4 mr-1 flex-shrink-0" />
+                  <GlobeAltIcon className="h-4 w-4 mr-1 flex-shrink-0" />
                     <span className="line-clamp-1">Best time: {destination.bestTimeToVisit}</span>
                   </div>
                   <div className="flex space-x-1">
@@ -992,11 +992,11 @@ export default function DestinationSelector({ context, onUpdate, onComplete, onA
                       </span>
                     ))}
                   </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
         
         {/* Scroll indicator */}
         <div className="flex justify-center mt-4 space-x-2">
@@ -1006,7 +1006,7 @@ export default function DestinationSelector({ context, onUpdate, onComplete, onA
               className="h-1.5 w-1.5 rounded-full bg-gray-300 dark:bg-gray-600"
               style={{ touchAction: 'manipulation' }}
             />
-          ))}
+                  ))}
         </div>
       </div>
     </div>

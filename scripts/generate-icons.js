@@ -3,10 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const sizes = [72, 96, 128, 144, 152, 192, 384, 512];
-const sourceIcon = path.join(__dirname, '../public/icon-source.png');
+const sourceIcon = path.join(__dirname, '../public/icon-source.svg');
 const outputDir = path.join(__dirname, '../public/icons');
 
-// Ensure output directory exists
+// Create output directory if it doesn't exist
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
